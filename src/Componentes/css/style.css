@@ -1,0 +1,1069 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+}
+
+::-webkit-input-placeholder { /* Edge */
+    color: rgb(0, 102, 153); 
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(0, 102, 153); 
+  }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Largura da barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track-piece {
+    background-color: #EEE;
+    border-left: 1px solid #CCC
+}
+
+/* Cor do indicador de rolagem */
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: rgb(217, 217, 217);
+}
+
+/* Cor do indicador de rolagem - ao passar o mouse */
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover {
+    background-color: rgb(217, 217, 217);
+}
+
+#conteudo{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+#formPermissao{
+    width: 50%;
+    height: 50%;
+    border-radius: 5px;
+    box-shadow: 0 0 2px black;
+    background-color: white;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+} 
+
+#formPerfil{
+    width: 600px;
+    height: 570px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px black;
+    background-color: white;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center
+}
+
+
+.headerForm{
+    width: 100%;
+    height: 50px;
+    background-color:  rgba(0, 102, 153);
+    align-content: center;
+    text-align: center;
+    position: relative;
+    top: 0px;
+}
+
+.footerForm{
+    width: 100%;
+    height: 40px;
+    background-color: #e6e6e6;
+    align-content: center;
+    text-align: center;
+    margin-top: 29px;
+}
+
+.headerForm h2{
+    color: white;
+    line-height: 50px;
+}
+
+.headerForm h3{
+    color: white;
+    line-height: 50px;
+}
+
+.inputTexto{
+    border: none;
+    border-bottom: solid 1px rgba(0, 102, 153);
+    outline: none;
+    margin-top: 5%;
+    width: 100%;
+}
+.campoMensagem{
+    margin: 10px;
+    width: 80%;
+    outline: none;
+    border-color:rgba(0, 102, 153);
+    border-radius: 5px;
+}
+
+.campoNome{
+    height: 30px;
+    width: 300px;
+}
+
+#descricaoPermissao{
+    height: 200px;
+    margin-top: 20px;
+    resize: none;
+    width: 170%;
+}
+
+#labelPermissao{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#labelPerfil{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#selectPermissao{
+    height: 30px;
+    width: 300px;
+    border: none;
+    border-bottom: solid 1px rgba(0, 102, 153);
+    outline: none;
+}
+
+
+#caixaSelecao{
+    height: 200px;
+    width: 300px;
+    background-color: white;
+    border-radius: 3px;
+    border: solid 1px gray;
+    margin-top: 20px;
+overflow: auto;
+}
+
+.divPermissao{
+    width: 100%;
+    height: 20px;
+    background-color: #e6f9ff;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2px;
+}
+
+.divPermissaoSelecionada{
+    width: 100%;
+    height: 20px;
+    background-color: yellowgreen;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2px;
+}
+
+.permissaoHidden{
+    display: none;
+}
+
+.removerPermissao{
+    display: none;
+}
+
+#caixaSelecao div h4{
+    font-size: smaller;
+    line-height: 20px;
+}
+#caixaSelecao div:hover{
+    cursor: pointer;
+}
+
+#btnCriarPerfil{
+    height: 30px;
+    width: 80px;
+    margin-top: 3px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgba(0, 102, 153);
+    color: white;
+}
+#btnCriarPerfil:hover{
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+#btnAdicionarTudo{
+    height: 30px;
+    width: 90px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgba(0, 102, 153);
+    color: white;
+    margin-left: 450px;
+    margin-top: -30px;
+}
+#btnAdicionarTudo:hover{
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+#btnAdicionarTudo p {
+    font-size: 12px;
+    line-height: 30px;
+}
+
+#setas{
+ height: 50px;
+ width: 70px;   
+ align-content: center;
+}
+
+#setaBaixo{
+    float: left;
+    margin-top: 20px;
+	 cursor: pointer;
+}
+
+#setaCima{
+float: left;
+margin-top: 20px;
+margin-left: 20px;
+cursor: pointer;
+}
+
+#setaBaixo :hover{
+    color: yellowgreen;
+}
+
+#setaCima :hover{
+    color: yellowgreen;
+}
+
+
+.fundo{
+    background: url('../imagens/capa.jpg');
+    overflow-x: hidden;	
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#NaoEncontrado{
+    background: url('../imagens/404NotFound.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;	
+}
+.navegacao{
+    width: 100%;
+    height: 60px;
+    background:  rgba(0, 102, 153);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 2px white;
+}
+.logo{
+    width: 150px;
+    margin-left: 10px;
+}
+.tituloPrincipal{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    line-height: 60px;
+}
+.opcaoSaidaVoltar{
+    font-size: 20px;
+    color: white;
+    padding-right: 10px;
+}
+.opcaoSaidaVoltar:hover{
+    cursor: pointer;
+    color: yellowgreen;
+}
+.containerNovoUsuario{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.containerGerenciaOpcao{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#atualizarPerfilContainer{
+    width: 100vw;
+    height: 100vh;
+}
+#adicionarRemoverPerfil{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    background-color: white;
+    border-radius: 5px;
+}
+#adicionarPerfil{
+    width: 50%;
+    height: 92%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+#removerPerfil{
+    width: 50%;
+    height: 92%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+#caixaRemover{
+    width: 95%;
+    height: 50%;
+    box-shadow: 0 0 2px black;
+    border-radius: 5px;
+    margin:auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+#tituloDoPerfil h4{
+    color: black;
+    font-weight: bold;
+}
+#tituloRemoverPermissao h4{
+    color: black;
+    font-weight: bold;
+}
+
+#selecionarAttPerfil{
+    width: 50%;
+    border: none;
+    outline: none;
+    border-bottom: solid 1px rgba(0, 102, 153);
+}
+.box{
+    width: 360px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 2px black;
+}
+
+.box button:hover{
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.boxAlterar{
+    width: 360px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 2px black;
+}
+.inputLogin{
+    width: 310px;
+    height: 35px;
+    padding-left: 5px;
+    margin: 15px;
+    outline: none;
+}
+
+.inputLogin:hover{
+    outline:auto rgba(0, 102, 153, 0.4);
+}
+.btnPadrao{
+    background: rgba(0, 102, 153);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    width: 100px;
+    height: 30px;
+}
+
+
+.btnPadraoDelete{
+    background: #ff1a1a;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    width: 100px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+.btnPermissaoDeletar{
+    background: #ff1a1a;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    width: 100px;
+    height: 20px;
+    margin-right: 20px;
+}
+.btnPadraoDelete:hover{
+   opacity: 0.3;
+    transition: 0.3s;
+}
+
+.btnPermissaoDeletar:hover{
+    opacity: 0.3;
+    transition: 0.3s;
+}
+
+
+.botaoAdicionarTudo{
+    background: rgba(0, 102, 153);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    width: 80px;
+    height: 30px;
+    position: relative;
+    left: 70px;
+    bottom: 27px;
+}
+.botaoAdicionarTudo{
+    font-size: 12px;
+    line-height: 30px;
+}
+.botaoAdicionarTudo:hover{
+    opacity: 0.5;
+    transition: 0.3s;
+}
+#caixaAdicionar{
+    width: 50%;
+    height: 40%;
+    box-shadow: 0 0 2px black;
+    margin:auto;
+    border-radius: 5px;
+    overflow-y:auto;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.btnPadrao:hover{
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.loginTopo{
+    width: 100%;
+    height: 50px;
+    background-color:  rgba(0, 102, 153);
+    align-content: center;
+    text-align: center;
+    position: relative;
+    top: 0px;
+}
+.loginTopo h3{
+    color: white;
+    line-height: 50px;
+}
+.quadroOpcao{
+    width: 170px;
+    height: 200px;
+    margin-left: 5px;
+    box-shadow: 0 0 2px black;
+    display: none;
+}
+.quadroGerenciaOpcoesUsuario{
+    background: url('../imagens/usuario.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.quadroCriarUsuario{
+    background: url('../imagens/criarUsuario.png');
+    background-size: cover;
+    background-position: center;
+}
+.quadroGerenciarUsuario{
+    background: url('../imagens/gerenciarUsuarios.png');
+    background-size: 220px 220px;
+    background-position: center;
+}
+.quadroCriarPerfil{
+    background: url('../imagens/criarPerfil.png');
+    background-size: cover;
+    background-position: center;
+}
+.quadroGerenciarPerfil{
+    background: url('../imagens/perfilAcesso.png');
+    background-size: cover;
+    background-position: center; 
+}
+.quadroCriarPermissao{
+    background: url('../imagens/permissao.png');
+    background-size: cover;
+    background-position: center; 
+}
+
+
+
+.quadroOpcao:hover{
+    cursor: pointer;
+    transition: 0.6s;
+    transform: scale(1.1);
+    box-shadow: 
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+}
+.quadroOpcao:hover > .tituloQuadro{
+    background-color: rgba(0,0,0,0.6);
+}
+.tituloQuadro{
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    height: 30px;
+}
+.tituloQuadro h5{
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.tituloQuadro h4{
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.tituloQuadro h6{
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#mensagemRetorno{
+    position: absolute;
+    border-radius: 5px;
+    bottom: 78%;
+    left: 15%;
+    padding: 0 10px 0 10px; 
+    height: 5%;
+    background-color: #fff;
+    display: none;
+}
+#mensagemRetornoAtualizarUsuario{
+    position: absolute;
+    border-radius: 5px;
+    bottom: 85%;
+    left: 40%;
+    padding: 0 10px 0 10px; 
+    height: 5%;
+    background-color: #fff;
+    display: none;
+}
+#mensagemRetornoAtualizarUsuario h6{
+    line-height: 35px;
+    text-align: center;
+}
+#mensagemRetornoPermissao{
+    position: absolute;
+    bottom: 73%;
+    border-radius: 5px;
+    padding: 0 10px 0 10px; 
+    height: 5%;
+    background-color: #fff;
+    display: none;
+}
+#mensagemRetornoPermissao h6{
+    color: red;
+    text-align: center;
+    line-height: 35px;
+}
+
+#mensagemRetorno h6{
+    color: red;
+    text-align: center;
+    line-height: 35px;
+}
+.atualizarUsuario{
+    width: 50%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+}
+.atualizarUsuario input{
+    margin-top: 20px;
+    border: none;
+    border-bottom: solid 1px rgba(0, 102, 153);
+    outline: none;
+}
+.atualizarUsuario button{
+    margin-top: 20px;
+}
+.informacaoUsuario{
+    width: 55%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    margin: 50px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+}
+.informacaoUsuario input{
+    margin-top: 30px;
+    border: none;
+    border-bottom: solid 1px rgba(0, 102, 153);
+    outline: none;
+
+}
+.inputUsuario{
+   width: 100%;
+}
+.campoDDDeDDI{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.ddi, .ddd{
+    width: 38px;
+    margin-right: 2px;
+}
+.numeroCelular{
+    width: 100%;
+}
+
+.informacaoUsuario button{
+    margin-top: 30px;
+}
+.informacaoPerfil{
+    width: 55%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    margin:50px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+}
+.tituloCriarUsuario{
+    background-color:  rgba(0, 102, 153);
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
+}
+
+.tituloCriarUsuario h3{
+    color: white;
+    text-align: center;
+}
+#listaPerfil{
+    margin-top: 15px;
+    width: 80%;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: rgba(0, 102, 153);
+}
+
+.caixaPerfil{
+    width: 80%;
+    height: 50%;
+    overflow-y: scroll;
+    box-shadow: 0 0 2px black;
+    margin-top: 30px;
+}
+.arrowDown{
+    position: relative;
+    right: 30px;
+    top: 35px;
+}
+.arrowUp{
+    position: relative;
+    top: 10px;
+}
+.arrowDown:hover, .arrowUp:hover{
+ cursor: pointer;
+ color: yellowgreen;
+}
+.perfis{
+    cursor: pointer;
+    width: 100%;
+    height: 20px;
+    background-color: #e6f9ff;
+}
+.perfisLabel{
+    font-size: smaller;
+    line-height: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.perfilSelecionado{
+    cursor: pointer;
+    width: 100%;
+    height: 20px;
+    background-color: yellowgreen;
+}
+#criarPermissao{
+    background-color: rgba(0, 102, 153);
+    width: 100%;
+}
+
+#criarPermissao h3{
+    color: white;
+    text-align: center;
+}
+
+#mensagemRetornoPerfil{
+    position: relative;
+    z-index: 99;
+    border-radius: 5px;
+    padding: 0 10px 0 10px;
+    height: 4%;
+    background-color: #fff;
+    display: none;
+}
+
+
+#mensagemRetornoPerfil h6{
+    text-align: center;
+    line-height: 35px;
+}
+
+.permissoesDelete{
+    width: 100%;
+    height: 30px;
+    background-color: #e6f9ff;
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: 5px;
+    
+}
+.caixaNomePermissao{ 
+   
+   margin-left: 20px;
+   max-width: 500px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+ }
+
+ 
+#btnAdicionarPermissoes{
+    background: rgba(0, 102, 153);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    width: 100px;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+#btnAdicionarPermissoes:hover{
+    opacity: 0.3;
+    transition: 0.3s;
+}
+.displayNone{
+    display: none;
+}
+
+#esqueciASenha{
+    color: blue;
+    font-size: smaller;
+    cursor: pointer;
+    margin-right: 10px;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+#esqueciASenha:hover{
+    color: yellowgreen;
+    cursor: pointer;
+}
+
+
+.formatacaoTela{
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#descricaoPermissao{
+    height: 200px;
+    margin-top: 20px;
+    resize: none;
+    width: 170%;
+}
+
+
+@media only screen and (max-width: 900px){
+    #adicionarPerfil{
+        clear: both;
+        float: none;
+        width: 100%;
+    }
+    #removerPerfil{
+        clear: both;
+        float: none;
+        width: 100%;
+        background-color: white;
+        border-radius: 5px;
+    }
+    #caixaRemover{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1010px){
+    .containerNovoUsuario{
+        flex-direction: column;
+        margin-top: 10%;
+        height: 150vh;
+    }
+}
+@media only screen and (max-width: 500px){
+    .containerGerenciaOpcao{
+        flex-direction: column;
+        margin-top: 15%;
+    }
+    .quadroOpcao{
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (min-width: 1360px) {
+    
+    .formatacaoTela input{
+        margin-bottom: 0%;    
+    }
+  }               
+  @media only screen and (min-width: 1920px) {
+    .formatacaoTela input{
+        margin-bottom: 10%; 
+    }
+  }
+  @media only screen and (min-width: 1440px) {
+    .formatacaoTela input{
+        margin-bottom: 5%; 
+    }
+  }
+@media only screen and (max-width: 790px) {
+    #descricaoPermissao{
+        height: 200px;
+        margin-top: 20px;
+        resize: none;
+        width: 100%;
+    }
+  }                  
+  
+  @media only screen and (max-width: 760px) {
+.atualizarUsuario{
+    margin-top: 15%;
+}
+.container{
+    flex-direction: column;
+    height: 120vh;
+}
+.formatacaoTela input{
+    width: 90%;
+}
+.campoDDDeDDI{
+    flex-direction: column;
+}
+.container{
+    height: 150vh;
+}
+
+  }
+
+  @media only screen and (max-width: 990px) {
+    .atualizarUsuario{
+     height: 45%;
+    }
+   }
+
+
+#gerenciarPerfis div{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%; 
+}
+
+#gerenciarPerfis div input{
+    width: 50%; 
+    height: 40px; 
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#gerenciarUsuario div{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+#gerenciarUsuario div input{
+    width: 50%; 
+    height: 40px; 
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#gerenciarPerfis  div  table  tbody  tr  div  td{
+    border: none;
+}
+.novoBtnPadrao{
+    background: rgba(0, 102, 153);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    width: 100px;
+    height: 30px;
+}
+
+.novoBtnPadraoDelete{
+    background: red;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    width: 100px;
+    height: 30px;
+}
+
+#permissoesTd{
+    max-width: 20%;
+    overflow: hidden;
+}
+
+#gerenciarUsuario  div  table  tbody  tr  div  td{
+    border: none;
+}
+
+
+@media only screen and (max-width: 820px) {
+    
+#gerenciarPerfis div input{
+    margin-top: 50px;
+}
+
+#gerenciarUsuario div input{
+    margin-top: 50px;
+    
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
